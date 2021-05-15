@@ -20,12 +20,36 @@
         }
       } else if (isNaN(useBirthday)) {
         dobErrMsg.innerHTML = "date of birth is invalid";
+        if(!name){
+            nameErrMsg.innerHTML = "please enter the name";
+          }
+          else{
+              nameErrMsg.innerHTML = "";
+          }
       } else if (useBirthday > below18) {
         dobErrMsg.innerHTML = "neengal 18 keel ullavar";
+        if(!name){
+            nameErrMsg.innerHTML = "please enter the name";
+          }
+          else{
+              nameErrMsg.innerHTML = "";
+          }
       } else if (useBirthday > below100 && useBirthday < below18) {
         dobErrMsg.innerHTML = "neengal 18 lirundhu 100 vayadhukku ulla var";
+        if(!name){
+            nameErrMsg.innerHTML = "please enter the name";
+          }
+          else{
+              nameErrMsg.innerHTML = "";
+          }
       } else if (useBirthday < below100) {
         dobErrMsg.innerHTML = "neengal vayasanavargal";
+        if(!name){
+            nameErrMsg.innerHTML = "please enter the name";
+          }
+          else{
+              nameErrMsg.innerHTML = "";
+          }
       } else {
         dobErrMsg.innerHTML = "";
       }
